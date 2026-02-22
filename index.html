@@ -38,7 +38,7 @@
 <div class="cbd" id="cbd" onclick="if(event.target===this)cCB()"><div class="cbw"><div class="cbh"><div style="font-family:'Newsreader',serif;font-size:18px;font-weight:600">SciencesPistes</div></div><div class="cbm" id="cbm"></div><div class="cbf"><input class="cbf-i ip" id="cbi" placeholder="Votre message..." onkeypress="if(event.key==='Enter')sendCBMsg()"><button class="cbf-b" onclick="sendCBMsg()">➤</button></div></div></div>
 <div class="to" id="to"></div>
 
-<script>
+<script type="module">
 // ============ SUPABASE CONFIG ============
 // Pour connecter Supabase :
 // 1. Créer un projet sur https://supabase.com
@@ -47,7 +47,7 @@
 
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm'
 const SUPABASE_URL = 'https://miybjlxcfhshkmmwqvdg.supabase.co'
-const SUPABASE_KEY = 'esb_publishable_BJMadqMyh5lu2WI3mSsQoA_SLfpVYtH'
+const SUPABASE_KEY = 'VOTRE_CLE_ANON_SUPABASE_ICI' // ⚠️ Remplacez par votre clé anon depuis Supabase Dashboard > Settings > API
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 // ============ SQL POUR CRÉER LES TABLES ============
@@ -293,4 +293,49 @@ function gp(a,k){var g={};a.forEach(function(i){var v=i[k];if(!g[v])g[v]=[];g[v]
 function fD(d){if(!d)return'';var m=['jan.','fév.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];var p=d.split('-');return(+p[2])+' '+m[(+p[1])-1]+' '+p[0];}
 function toast(m){var t=document.getElementById('to');t.textContent=m;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2500);}
 function ic(n){var i={grid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>',file:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',inbox:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/></svg>',book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>'};return i[n]||'';}
+
+// === Exposition globale des fonctions (requis pour type="module") ===
+window.doL = doL;
+window.demoL = demoL;
+window.doLo = doLo;
+window.goTo = goTo;
+window.oOnboard = oOnboard;
+window.cCB = cCB;
+window.cbNext = cbNext;
+window.cbClear = cbClear;
+window.cbAddMsg = cbAddMsg;
+window.sendCBMsg = sendCBMsg;
+window.bA = bA;
+window.bN = bN;
+window.bT = bT;
+window.bP = bP;
+window.bR = bR;
+window.rRC = rRC;
+window.fRC = fRC;
+window.sPT = sPT;
+window.oOffer = oOffer;
+window.sApp = sApp;
+window.oCandD = oCandD;
+window.wCand = wCand;
+window.oNewDecl = oNewDecl;
+window.oDemP = oDemP;
+window.oDclP = oDclP;
+window.oNewDemP = oNewDemP;
+window.oCandR = oCandR;
+window.dC = dC;
+window.oClR = oClR;
+window.oNewCl = oNewCl;
+window.oRefDem = oRefDem;
+window.oContact = oContact;
+window.ePro = ePro;
+window.eProP = eProP;
+window.oS = oS;
+window.cS = cS;
+window.toast = toast;
+window.ic = ic;
+window.pH = pH;
+window.pR = pR;
+window.gp = gp;
+window.fD = fD;
+window.cs = cs;
 </script></body></html>
