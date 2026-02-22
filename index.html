@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><title>SciencesPistes</title><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,600&display=swap" rel="stylesheet">
 <style>*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}:root{--bg:#faf9f7;--wh:#fff;--s1:#f3f1ee;--brd:#e0ddd8;--brd2:#d0cdc7;--t1:#1a1816;--t2:#5c5650;--t3:#8a847d;--t4:#b5afa8;--co:#d94f3b;--cl:#fef0ed;--cd:#b83d2d;--gn:#2a9d6b;--gl:#edf8f3;--am:#d4930a;--al:#fef8e7;--bl:#3b7dd9;--bll:#edf3fe;--r:14px;--rs:10px;--sh:0 1px 3px rgba(0,0,0,.04),0 4px 12px rgba(0,0,0,.06);--sh2:0 4px 16px rgba(0,0,0,.08),0 12px 40px rgba(0,0,0,.1)}body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--t1);min-height:100vh;overflow-x:hidden}a{color:var(--co);text-decoration:none;font-weight:600}
-#LS{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(160deg,#faf9f7,#f0ece6)}.lbox{width:100%;max-width:400px;background:var(--wh);border-radius:20px;padding:44px 32px;box-shadow:var(--sh2);text-align:center}.llogo{font-family:'Newsreader',serif;font-size:28px;font-weight:600;margin-bottom:4px}.llogo span{color:var(--co)}.lsub{font-size:14px;color:var(--t3);margin-bottom:28px}.ltabs{display:flex;gap:4px;background:var(--s1);border-radius:var(--rs);padding:3px;margin-bottom:20px}.ltab{flex:1;padding:10px;border:none;border-radius:8px;font:500 13px 'Outfit',sans-serif;color:var(--t3);background:none;cursor:pointer;transition:.2s}.ltab.on{background:var(--co);color:#fff}.lin{width:100%;padding:14px 18px;border:1.5px solid var(--brd);border-radius:var(--rs);font:400 15px 'Outfit',sans-serif;color:var(--t1);background:var(--s1);outline:none;margin-bottom:12px;transition:.2s}.lin:focus{border-color:var(--co);background:var(--wh)}.lbtn{width:100%;padding:14px;border:none;border-radius:var(--rs);font:600 15px 'Outfit',sans-serif;color:#fff;background:var(--co);cursor:pointer;transition:.2s;margin-top:4px}.lbtn:hover{background:var(--cd)}.lbtn:active{transform:scale(.97)}.lhi{font-size:12px;color:var(--t4);margin-top:14px}
-.app{display:none;min-height:100vh;padding-bottom:80px}.app.on{display:block}.tb{position:sticky;top:0;z-index:50;background:rgba(250,249,247,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--brd);padding:12px 20px;display:flex;align-items:center;justify-content:space-between}.tbl{font-family:'Newsreader',serif;font-size:20px;font-weight:600}.tbl span{color:var(--co)}.tbr{display:flex;align-items:center;gap:8px}.tbrole{font-size:11px;color:var(--t4);background:var(--s1);padding:3px 10px;border-radius:20px}.tbav{width:32px;height:32px;border-radius:50%;background:var(--cl);color:var(--co);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;cursor:pointer}
+#LS{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(160deg,#faf9f7,#f0ece6)}.lbox{width:100%;max-width:400px;background:var(--wh);border-radius:20px;padding:44px 32px;box-shadow:var(--sh2);text-align:center}.llogo{font-family:'Newsreader',serif;font-size:28px;font-weight:600;margin-bottom:4px}.llogo-sciences{color:var(--t1)}.llogo-pistes{color:var(--co);text-decoration:underline;text-decoration-color:var(--co);text-decoration-thickness:2px;text-underline-offset:4px}.lsub{font-size:14px;color:var(--t3);margin-bottom:28px}.lin{width:100%;padding:14px 18px;border:1.5px solid var(--brd);border-radius:var(--rs);font:400 15px 'Outfit',sans-serif;color:var(--t1);background:var(--s1);outline:none;margin-bottom:12px;transition:.2s}.lin:focus{border-color:var(--co);background:var(--wh)}.lbtn{width:100%;padding:14px;border:none;border-radius:var(--rs);font:600 15px 'Outfit',sans-serif;color:#fff;background:var(--co);cursor:pointer;transition:.2s;margin-top:4px}.lbtn:hover{background:var(--cd)}.lbtn:active{transform:scale(.97)}.lhi{font-size:12px;color:var(--t4);margin-top:14px}.ldemo{display:flex;gap:12px;justify-content:center;margin-top:12px}.ldemo a{font-size:12px;color:var(--co);font-weight:500;cursor:pointer}
+.app{display:none;min-height:100vh;padding-bottom:80px}.app.on{display:block}.tb{position:sticky;top:0;z-index:50;background:rgba(250,249,247,.88);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--brd);padding:12px 20px;display:flex;align-items:center;justify-content:space-between}.tbl{font-family:'Newsreader',serif;font-size:20px;font-weight:600}.tbl-sciences{color:var(--t1)}.tbl-pistes{color:var(--co);text-decoration:underline;text-decoration-color:var(--co);text-decoration-thickness:1.5px;text-underline-offset:3px}.tbr{display:flex;align-items:center;gap:8px}.tbrole{font-size:11px;color:var(--t4);background:var(--s1);padding:3px 10px;border-radius:20px}.tbav{width:32px;height:32px;border-radius:50%;background:var(--cl);color:var(--co);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;cursor:pointer}
 .bn{position:fixed;bottom:0;left:0;right:0;z-index:50;background:var(--wh);border-top:1px solid var(--brd);display:flex;padding:5px 0 calc(5px + env(safe-area-inset-bottom));box-shadow:0 -2px 10px rgba(0,0,0,.04)}.ni{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:5px 0;cursor:pointer;border:none;background:none;font-family:inherit}.ni svg{width:20px;height:20px;color:var(--t4);transition:.15s}.ni .nl{font-size:9.5px;font-weight:500;color:var(--t4);transition:.15s}.ni.on svg{color:var(--co)}.ni.on .nl{color:var(--co);font-weight:600}.ni:active{transform:scale(.9)}
 .pg{display:none;padding:20px;max-width:700px;margin:0 auto}.pg.on{display:block;animation:fu .25s ease}@keyframes fu{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.pgt{font-family:'Newsreader',serif;font-size:24px;font-weight:600;margin-bottom:4px}.pgs{font-size:13px;color:var(--t3);margin-bottom:18px;line-height:1.5}
 .ch{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px}.chl{background:var(--bll);color:var(--bl)}.chs{background:var(--s1);color:var(--t2)}.chf{background:var(--al);color:var(--am)}.chp{background:var(--gl);color:var(--gn);font-weight:600}.chc{background:var(--cl);color:var(--co);font-weight:600}
@@ -21,21 +21,156 @@
 .vb{background:var(--s1);border:2px dashed var(--brd2);border-radius:var(--r);padding:20px;text-align:center;cursor:pointer;transition:.2s;margin-bottom:14px}.vb:hover{border-color:var(--co);background:var(--cl)}.vb p{font-size:13px;color:var(--t3);line-height:1.5}
 .vd{display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--bl);font-weight:500}.vd::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--bl)}
 .pr{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}.prl{font-size:13px;color:var(--t3)}.prv{font-size:14px;font-weight:500;text-align:right;max-width:60%}
+.cbd{position:fixed;inset:0;z-index:110;background:rgba(0,0,0,.4);display:none;align-items:center;justify-content:center}.cbd.on{display:flex}.cbw{background:var(--wh);border-radius:20px;width:95%;max-width:500px;max-height:85vh;overflow-y:auto;display:flex;flex-direction:column}.cbh{padding:20px 20px;border-bottom:1px solid var(--brd);flex-shrink:0}.cbm{flex:1;padding:20px;overflow-y:auto;display:flex;flex-direction:column;gap:12px}.cbm-msg{display:flex;gap:8px;animation:cmf .25s ease}@keyframes cmf{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.cbm-bot{justify-content:flex-start}.cbm-user{justify-content:flex-end}.cbm-bubble{padding:12px 16px;border-radius:12px;font-size:13px;line-height:1.5;max-width:85%}.cbm-bot .cbm-bubble{background:var(--s1);color:var(--t2);display:flex;align-items:center;gap:8px}.cbm-bot .cbm-bubble::before{content:'SP';width:28px;height:28px;min-width:28px;border-radius:50%;background:var(--co);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:11px;text-align:center}.cbm-user .cbm-bubble{background:var(--co);color:#fff}.cbm-typing{display:flex;gap:4px;padding:12px 16px;background:var(--s1);border-radius:12px;width:fit-content}.cbm-typing span{width:6px;height:6px;border-radius:50%;background:var(--t3);animation:cbt 1.4s infinite}.cbm-typing span:nth-child(2){animation-delay:.2s}.cbm-typing span:nth-child(3){animation-delay:.4s}@keyframes cbt{0%,60%,100%{opacity:0.5}30%{opacity:1}}
+.cbf{padding:15px;border-top:1px solid var(--brd);display:flex;gap:8px;flex-shrink:0}.cbf-i{flex:1}.cbf-b{width:40px;height:40px;border:none;background:var(--co);color:#fff;border-radius:8px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;transition:.2s;flex-shrink:0}.cbf-b:hover{background:var(--cd)}.cbf-b:active{transform:scale(.95)}
+.cbc{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.cbc-btn{padding:8px 14px;border:1.5px solid var(--co);background:none;color:var(--co);border-radius:20px;font:500 12px 'Outfit',sans-serif;cursor:pointer;transition:.2s}.cbc-btn:hover{background:var(--cl)}.cbc-btn:active{transform:scale(.95)}
 @media(min-width:768px){.bn{max-width:700px;left:50%;transform:translateX(-50%);border-radius:16px 16px 0 0;border:1px solid var(--brd);border-bottom:none}.ov{align-items:center}.sh{border-radius:20px;margin-bottom:3vh;max-height:85vh}.cb{bottom:90px;right:calc(50% - 370px)}}
 </style></head><body>
 
 <div id="LS"><div class="lbox">
-  <div class="llogo">Sciences<span>Pistes</span></div><div class="lsub">Mon compte</div>
-  <div class="ltabs"><button class="ltab on" onclick="sLR('tutor',this)">Mentor</button><button class="ltab" onclick="sLR('parent',this)">Parent</button><button class="ltab" onclick="sLR('ref',this)">Référent</button></div>
-  <input class="lin" id="le" type="email"><button class="lbtn" onclick="doL()">Se connecter</button>
-  <div class="lhi" id="lh">Démo Mentor</div>
+  <div class="llogo"><span class="llogo-sciences">Sciences</span><span class="llogo-pistes">Pistes</span></div><div class="lsub">Connectez-vous</div>
+  <input class="lin" id="le" type="email" placeholder="E-mail"><button class="lbtn" onclick="doL()">Se connecter</button>
+  <div class="ldemo"><a onclick="demoL('jade.c@demo.fr')">Démo Mentor</a><span style="color:var(--t4)">·</span><a onclick="demoL('franck.d@demo.fr')">Démo Parent</a><span style="color:var(--t4)">·</span><a onclick="demoL('lola.b@demo-sp.fr')">Démo Référent</a></div>
 </div></div>
 
-<div class="app" id="app"><div class="tb"><div class="tbl">Sciences<span>Pistes</span></div><div class="tbr"><span class="tbrole" id="tR"></span><div class="tbav" id="tA" onclick="goTo('profile')"></div></div></div><div id="P"></div><div class="bn" id="N"></div><div class="cb"><button class="cbb" onclick="oContact()" title="Contacter l'équipe">💬</button></div></div>
+<div class="app" id="app"><div class="tb"><div style="display:flex;align-items:center;gap:4px"><span class="tbl-sciences">Sciences</span><span class="tbl-pistes">Pistes</span></div><div class="tbr"><span class="tbrole" id="tR"></span><div class="tbav" id="tA" onclick="goTo('profile')"></div></div></div><div id="P"></div><div class="bn" id="N"></div><div class="cb"><button class="cbb" onclick="oContact()" title="Contacter l'équipe">💬</button></div></div>
 <div class="ov" id="ov" onclick="if(event.target===this)cS()"><div class="sh" id="sh"></div></div>
+<div class="cbd" id="cbd" onclick="if(event.target===this)cCB()"><div class="cbw"><div class="cbh"><div style="font-family:'Newsreader',serif;font-size:18px;font-weight:600">SciencesPistes</div></div><div class="cbm" id="cbm"></div><div class="cbf"><input class="cbf-i ip" id="cbi" placeholder="Votre message..." onkeypress="if(event.key==='Enter')sendCBMsg()"><button class="cbf-b" onclick="sendCBMsg()">➤</button></div></div></div>
 <div class="to" id="to"></div>
 
 <script>
+// ============ SUPABASE CONFIG ============
+// Pour connecter Supabase :
+// 1. Créer un projet sur https://supabase.com
+// 2. Copier l'URL et la clé anon ci-dessous
+// 3. Décommenter les lignes ci-dessous et commenter les données de démo
+
+// import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm'
+// const SUPABASE_URL = 'https://VOTRE-PROJET.supabase.co'
+// const SUPABASE_KEY = 'votre-clé-anon-publique'
+// const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+
+// ============ SQL POUR CRÉER LES TABLES ============
+/*
+-- Tables Supabase (à exécuter dans le SQL Editor)
+
+CREATE TABLE users (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  email TEXT UNIQUE NOT NULL,
+  role TEXT CHECK (role IN ('tutor','parent','referent')) NOT NULL,
+  first_name TEXT,
+  last_name TEXT,
+  phone TEXT,
+  address TEXT,
+  campus TEXT,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE tutors (
+  id UUID PRIMARY KEY REFERENCES users(id),
+  year TEXT,
+  bac DECIMAL,
+  subjects TEXT[],
+  presentation TEXT,
+  siret TEXT,
+  video_url TEXT
+);
+
+CREATE TABLE parents (
+  id UUID PRIMARY KEY REFERENCES users(id),
+  antenne TEXT
+);
+
+CREATE TABLE referents (
+  id UUID PRIMARY KEY REFERENCES users(id),
+  antenne TEXT
+);
+
+CREATE TABLE demands (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  student_name TEXT NOT NULL,
+  level TEXT NOT NULL,
+  subjects TEXT[],
+  frequency TEXT,
+  price_family DECIMAL,
+  price_tutor DECIMAL,
+  availability TEXT,
+  info TEXT,
+  address TEXT,
+  parent_id UUID REFERENCES users(id),
+  tutor_assigned UUID REFERENCES users(id),
+  status TEXT DEFAULT 'active',
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE candidatures (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  tutor_id UUID REFERENCES users(id),
+  demand_id UUID REFERENCES demands(id),
+  status TEXT CHECK (status IN ('pending','validated','refused','withdrawn')) DEFAULT 'pending',
+  message TEXT,
+  viewed BOOLEAN DEFAULT FALSE,
+  viewed_by TEXT,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE declarations (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  tutor_id UUID REFERENCES users(id),
+  demand_id UUID REFERENCES demands(id),
+  month TEXT,
+  hours DECIMAL,
+  detail TEXT,
+  feedback TEXT,
+  status TEXT DEFAULT 'draft',
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE invoices (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  parent_id UUID REFERENCES users(id),
+  demand_id UUID REFERENCES demands(id),
+  month TEXT,
+  amount DECIMAL,
+  hours DECIMAL,
+  status TEXT CHECK (status IN ('pending','paid')) DEFAULT 'pending',
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE onboarding_requests (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  email TEXT NOT NULL,
+  type TEXT CHECK (type IN ('inscription','callback')),
+  full_name TEXT,
+  phone TEXT,
+  address TEXT,
+  child_name TEXT,
+  child_level TEXT,
+  subjects TEXT[],
+  frequency TEXT,
+  availability TEXT,
+  notes TEXT,
+  processed BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- Row Level Security
+ALTER TABLE users ENABLE ROW LEVEL SECURITY;
+ALTER TABLE demands ENABLE ROW LEVEL SECURITY;
+ALTER TABLE candidatures ENABLE ROW LEVEL SECURITY;
+ALTER TABLE declarations ENABLE ROW LEVEL SECURITY;
+ALTER TABLE invoices ENABLE ROW LEVEL SECURITY;
+
+-- Exemple RLS : un parent ne voit que ses propres données
+CREATE POLICY "Users see own data" ON users FOR SELECT USING (auth.uid() = id);
+CREATE POLICY "Parents see own demands" ON demands FOR SELECT USING (auth.uid() = parent_id);
+CREATE POLICY "Tutors see active demands" ON demands FOR SELECT USING (status = 'active' AND tutor_assigned IS NULL);
+
+-- Auth : utiliser Magic Link (email)
+-- Configurer dans Supabase Dashboard > Authentication > Providers > Email
+-- Activer "Magic Link" et désactiver le mot de passe
+*/
+
 const D={
 t:[{id:'t1',fn:'Jade',ln:'Champollion',em:'jade.c@demo.fr',te:'06 XX XX XX 78',ca:'Paris',yr:'3A',bac:17.55,su:['Mathématiques','Physique-Chimie','Français','Méthodologie'],ini:'JC',pr:"Étudiante en 3ème année à Sciences Po Paris, Jade est passionnée par les sciences et la transmission. Elle développe une approche personnalisée et à l'écoute. Disponible mercredis après-midi et samedis.",si:null,vid:null,lk:['d1','d3'],ad:'42 rue des Écoles, 75005 Paris'}],
 p:[{id:'p1',fn:'Sandra',ln:'Martin',em:'sandra.m@demo.fr',te:'06 XX XX XX 69',ad:'Avenue du Roule, 92200 Neuilly',an:'Paris',ini:'SM',ch:['d1']},{id:'p2',fn:'Franck',ln:'Dupont',em:'franck.d@demo.fr',te:'06 XX XX XX 56',ad:'14 av. de Suffren, 75007 Paris',an:'Paris',ini:'FD',ch:['d2','d3']}],
@@ -60,13 +195,36 @@ dc:[
 iv:[{id:'i1',pi:'p2',di:'d3',mo:'Janvier 2026',am:'396€',h:12,s:'paid',dt:'2026-02-03'},{id:'i2',pi:'p1',di:'d1',mo:'Janvier 2026',am:'132€',h:4,s:'paid',dt:'2026-02-03'}]
 };
 function cs(t,d){return{d1:92,d2:78,d3:85,d4:65,d5:88,d6:71}[d]||70}
-let R='tutor',U=null;
-function sLR(r,e){R=r;document.querySelectorAll('.ltab').forEach(t=>t.classList.remove('on'));e.classList.add('on');const i=document.getElementById('le'),h=document.getElementById('lh');if(r==='tutor'){i.value='jade.c@demo.fr';h.textContent='Démo Mentor';}else if(r==='parent'){i.value='franck.d@demo.fr';h.textContent='Démo Parent';}else{i.value='lola.b@demo-sp.fr';h.textContent='Démo Référent';}}
-function doL(){if(R==='tutor')U=D.t[0];else if(R==='parent')U=D.p[1];else U=D.r[0];document.getElementById('LS').style.display='none';document.getElementById('app').classList.add('on');document.getElementById('tA').textContent=U.ini;document.getElementById('tR').textContent=R==='tutor'?'Mentor':R==='parent'?'Parent':'Référent·e';bA();}
+let R='tutor',U=null,CB={st:0,data:{}};
+function demoL(em){document.getElementById('le').value=em;doL();}
+function doL(){var em=document.getElementById('le').value.trim();if(!em){toast('Veuillez entrer votre email');return;}var u=null;if(D.t.some(x=>{if(x.em===em){u=x;R='tutor';return true;}})){}else if(D.p.some(x=>{if(x.em===em){u=x;R='parent';return true;}})){}else if(D.r.some(x=>{if(x.em===em){u=x;R='ref';return true;}})){}if(u){U=u;document.getElementById('LS').style.display='none';document.getElementById('app').classList.add('on');document.getElementById('tA').textContent=U.ini;document.getElementById('tR').textContent=R==='tutor'?'Mentor':R==='parent'?'Parent':'Référent·e';bA();}else{oOnboard(em);}}
 function doLo(){document.getElementById('app').classList.remove('on');document.getElementById('LS').style.display='flex';}
 function bA(){const P=document.getElementById('P'),N=document.getElementById('N');if(R==='tutor')bT(P,N);else if(R==='parent')bP(P,N);else bR(P,N);}
 function bN(n,i){n.innerHTML=i.map((x,j)=>'<button class="ni'+(j===0?' on':'')+'" onclick="goTo(\''+x.id+'\',this)">'+x.ic+'<span class="nl">'+x.lb+'</span></button>').join('');}
 function goTo(p,e){document.querySelectorAll('.pg').forEach(x=>x.classList.remove('on'));var el=document.getElementById('pg-'+p);if(el)el.classList.add('on');if(e){document.querySelectorAll('.ni').forEach(n=>n.classList.remove('on'));e.classList.add('on');}window.scrollTo({top:0,behavior:'smooth'});}
+
+// ===== CHATBOT ONBOARDING =====
+var CBFlow={
+0:{msg:'Bienvenue chez SciencesPistes ! 👋 Je suis là pour vous aider. Que souhaitez-vous faire ?',btns:[{text:'Inscrire mon enfant',val:'inscr'},{text:'Être recontacté·e',val:'callback'}]},
+1:{msg:'Pas de souci ! Pouvez-vous me donner votre nom et votre numéro de téléphone ? Je transmets à notre équipe.',inp:['name','phone']},
+1.5:{msg:'Parfait [name], notre équipe vous recontactera très vite ! 🙌',btn:'Terminer'},
+2:{msg:'Super ! Commençons par vous. Quel est votre nom complet ?',inp:['fullname']},
+3:{msg:'Merci [fullname] ! Quel est votre numéro de téléphone ?',inp:['phone']},
+4:{msg:'Et votre adresse (pour trouver un mentor proche de chez vous) ?',inp:['address']},
+5:{msg:'Parfait ! Maintenant parlons de votre enfant. Comment s\'appelle-t-il/elle et en quelle classe est-il/elle ? (ex: Emma, 4e)',inp:['child']},
+6:{msg:'Dans quelles matières a-t-il/elle besoin d\'aide ?',btns:[{text:'Maths',val:'Mathématiques'},{text:'Français',val:'Français'},{text:'Physique-Chimie',val:'Physique-Chimie'},{text:'Anglais',val:'Anglais'},{text:'SVT',val:'SVT'},{text:'Philo',val:'Philosophie'},{text:'SES',val:'SES'},{text:'Méthodologie',val:'Méthodologie'},{text:'Autre',val:'Autre'}],mult:true},
+7:{msg:'Combien d\'heures par semaine souhaitez-vous ?',btns:[{text:'1h/sem',val:'1h/sem'},{text:'1h30/sem',val:'1h30/sem'},{text:'2h/sem',val:'2h/sem'},{text:'3h/sem',val:'3h/sem'},{text:'4h/sem',val:'4h/sem'},{text:'5h+/sem',val:'5h+/sem'}]},
+8:{msg:'Quels créneaux vous arrangent ?',inp:['availability']},
+9:{msg:'Dernière question : avez-vous des infos à nous transmettre ? (difficultés, objectifs...)',inp:['notes',true]},
+10:{msg:'Parfait ! Votre demande a été transmise à notre équipe. Un référent vous contactera dans les 24h. 🎉',btn:'Terminer'}
+};
+function oOnboard(em){CB={st:0,data:{email:em,type:''}};cbShow();cbNext();}
+function cbShow(){document.getElementById('cbd').classList.add('on');document.body.style.overflow='hidden';}
+function cCB(){document.getElementById('cbd').classList.remove('on');document.body.style.overflow='';CB={st:0,data:{}};}
+function cbNext(){var s=CB.st,f=CBFlow[s];if(!f)return;cbClear();var m=f.msg;if(m.includes('[name]'))m=m.replace('[name]',CB.data.name||'');if(m.includes('[fullname]'))m=m.replace('[fullname]',CB.data.fullname||'');cbAddMsg('bot',m);if(f.btns&&!f.mult){setTimeout(()=>{f.btns.forEach(b=>{var el=document.createElement('button');el.className='cbc-btn';el.textContent=b.text;el.onclick=()=>{CB.data.choice=b.val;if(s===0){CB.data.type=b.val==='inscr'?'inscription':'callback';}cbAddMsg('user',b.text);if(b.val==='callback'){CB.st=1.5;}else{CB.st=2;}setTimeout(()=>cbNext(),300);};document.querySelector('.cbm').appendChild(el);});},100);}else if(f.btns&&f.mult){setTimeout(()=>{var cont=document.createElement('div');cont.className='cbc';f.btns.forEach(b=>{var el=document.createElement('button');el.className='cbc-btn';el.textContent=b.text;el.onclick=()=>{if(!CB.data.subjects)CB.data.subjects=[];var idx=CB.data.subjects.indexOf(b.val);if(idx>-1){CB.data.subjects.splice(idx,1);el.style.opacity='0.4';}else{CB.data.subjects.push(b.val);el.style.opacity='1';}};cont.appendChild(el);});var valbtn=document.createElement('button');valbtn.className='bt bp';valbtn.textContent='Valider';valbtn.style.width='100%';valbtn.style.margin='8px 0 0';valbtn.onclick=()=>{cbAddMsg('user',(CB.data.subjects||[]).join(', '));CB.st=7;setTimeout(()=>cbNext(),300);};cont.appendChild(valbtn);document.querySelector('.cbm').appendChild(cont);},100);}else if(f.inp){setTimeout(()=>{var cont=document.createElement('div');cont.style.display='flex';cont.style.flexDirection='column';cont.style.gap='8px';f.inp.forEach(k=>{if(k!==true){var inp=document.createElement('input');inp.className='ip';inp.placeholder=k==='name'?'Votre nom':k==='phone'?'Téléphone':k==='fullname'?'Nom complet':k==='address'?'Adresse':k==='child'?'Ex: Emma, 4e':k==='availability'?'Ex: Mardi 17h-18h, jeudi soir':'Votre message';inp.id='cb-'+k;cont.appendChild(inp);}});if(f.inp.includes(true)){var ta=document.createElement('textarea');ta.className='ip';ta.placeholder='(optionnel)';ta.id='cb-notes';ta.style.minHeight='60px';cont.appendChild(ta);}var valbtn=document.createElement('button');valbtn.className='bt bp';valbtn.textContent='Suivant';valbtn.style.width='100%';valbtn.style.marginTop='8px';valbtn.onclick=()=>{var v='',all=true;f.inp.forEach(k=>{if(k!==true){var el=document.getElementById('cb-'+k);if(!el.value.trim()&&k!=='notes'){all=false;}v+=el.value.trim()+'|';}});if(!all){toast('Veuillez remplir tous les champs');return;}CB.data[f.inp[0]]=document.getElementById('cb-'+f.inp[0]).value.trim();if(f.inp.length>1)CB.data[f.inp[1]]=document.getElementById('cb-'+f.inp[1]).value.trim();if(document.getElementById('cb-notes'))CB.data.notes=document.getElementById('cb-notes').value.trim();cbAddMsg('user',CB.data[f.inp[0]]);CB.st+=1;setTimeout(()=>cbNext(),300);};cont.appendChild(valbtn);document.querySelector('.cbm').appendChild(cont);},100);}else if(f.btn){setTimeout(()=>{var valbtn=document.createElement('button');valbtn.className='bt bp';valbtn.textContent=f.btn;valbtn.style.width='100%';valbtn.style.marginTop='8px';valbtn.onclick=()=>{cCB();toast('✅ Demande enregistrée');};document.querySelector('.cbm').appendChild(valbtn);},100);}}
+function cbClear(){var m=document.getElementById('cbm');m.innerHTML='';}
+function cbAddMsg(type,text){var m=document.getElementById('cbm'),div=document.createElement('div');div.className='cbm-msg '+(type==='bot'?'cbm-bot':'cbm-user');var bubble=document.createElement('div');bubble.className='cbm-bubble';bubble.textContent=text;div.appendChild(bubble);m.appendChild(div);setTimeout(()=>{document.querySelector('.cbm').scrollTop=document.querySelector('.cbm').scrollHeight;},50);}
+function sendCBMsg(){var inp=document.getElementById('cbi');if(!inp.value.trim())return;cbAddMsg('user',inp.value);inp.value='';setTimeout(()=>{cbAddMsg('bot','Merci ! On traite votre message. À bientôt ! 👋');setTimeout(()=>cCB(),2000);},500);}
 
 // ===== TUTOR =====
 function bT(P,N){var t=U,op=D.dm.filter(d=>d.ac&&!d.ti),mc=D.ca.filter(c=>c.ti===t.id),md=D.dc.filter(d=>d.ti===t.id),ms=D.dm.filter(d=>t.lk.includes(d.id));
@@ -135,5 +293,4 @@ function gp(a,k){var g={};a.forEach(function(i){var v=i[k];if(!g[v])g[v]=[];g[v]
 function fD(d){if(!d)return'';var m=['jan.','fév.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];var p=d.split('-');return(+p[2])+' '+m[(+p[1])-1]+' '+p[0];}
 function toast(m){var t=document.getElementById('to');t.textContent=m;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2500);}
 function ic(n){var i={grid:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',users:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>',file:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>',user:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>',home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',inbox:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 002 2h16a2 2 0 002-2v-6l-3.45-6.89A2 2 0 0016.76 4H7.24a2 2 0 00-1.79 1.11z"/></svg>',book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>'};return i[n]||'';}
-sLR('tutor',document.querySelector('.ltab.on'));
 </script></body></html>
